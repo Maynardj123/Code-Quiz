@@ -1,7 +1,13 @@
 var titleWords = document.querySelector(".mainName");
-var timerElement = document.querySelector(".timerCount");
 var startButton = document.querySelector(".startButton");
 
+var question = document.querySelector(".question");
+var choice1 = document.querySelector("#btn1");
+var choice2 = document.querySelector("#btn2");
+var choice3 = document.querySelector("#btn3");
+var choice4 = document.querySelector("#btn4");
+
+var timerElement = document.querySelector(".timerCount");
 var timer;
 var timerCounter;
 
