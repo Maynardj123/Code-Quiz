@@ -1,6 +1,8 @@
+var firstPage = document.querySelector(".firstPage")
 var titleWords = document.querySelector(".mainName");
 var startButton = document.querySelector(".startButton");
 
+var otherPages = document.querySelector(".otherPages")
 var question = document.querySelector(".question");
 var choice1 = document.querySelector("#btn1");
 var choice2 = document.querySelector("#btn2");
@@ -41,15 +43,26 @@ var questions =[
 
 ]
 
+
+function startQuiz() {
+    timerCounter= 75;
+    startTimer()
+    
+}
+
+function question() {
+    choice1.textContent = questions[0].
+    choice2.textContent =
+    choice3.textContent =
+    choice4.textContent = 
+}
+
 function init() {
     getCorrect();
     getWrong();
 }
 
-function startQuiz() {
-    timerCounter= 75;
-    startTimer()
-}
+
 
 function startTimer() {
     timer = setInterval(function() {

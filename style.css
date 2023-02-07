@@ -1,0 +1,18 @@
+.container {
+    background-color: aquamarine;
+    text-align: center;
+
+}
+
+.mainName {
+    font-size: 40px;
+    font-weight: 550;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    margin:3px;
+    font-size: 20px;
+    max-width: fit-content;
+}
