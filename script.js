@@ -1,6 +1,8 @@
 var firstPage = document.querySelector(".firstPage")
 var titleWords = document.querySelector(".mainName");
+var titlepar = document.querySelector(".mainParagraph");
 var startButton = document.querySelector(".startButton");
+
 
 var otherPages = document.querySelector(".otherPages")
 var question = document.querySelector(".question");
@@ -43,35 +45,53 @@ var questions =[
 
 ]
 
+startButton.addEventListener('click', startQuiz)
+
+
 
 function startQuiz() {
-    timerCounter= 75;
-    startTimer()
+    function unhide() {
+        question.style.removeProperty('display')
+        choice1.style.removeProperty('display')
+        choice2.style.removeProperty('display')
+        choice3.style.removeProperty('display')
+        choice4.style.removeProperty('display')
+    }
     
+    function hide() {
+        titleWords.style.display='none';
+        titlepar.style.display='none';
+        startButton.style.display='none';
+    }
+
+    hide();
+    unhide();
+    // timerCounter= 75;
+    // startTimer();
 }
 
-function question() {
-    choice1.textContent = questions[0].
-    choice2.textContent =
-    choice3.textContent =
-    choice4.textContent = 
-}
 
-function init() {
-    getCorrect();
-    getWrong();
-}
+// function question() {
+//     choice1.textContent = questions[0].
+//     choice2.textContent =
+//     choice3.textContent =
+//     choice4.textContent = 
+// }
+
+// function init() {
+//     getCorrect();
+//     getWrong();
+// }
 
 
 
-function startTimer() {
-    timer = setInterval(function() {
-        timerCounter--;
-        timerElement.textContent = timerCounter;
-        if (timerCounter >= 0) {
+// function startTimer() {
+//     timer = setInterval(function() {
+//         timerCounter--;
+//         timerElement.textContent = timerCounter;
+//         if (timerCounter >= 0) {
             
-        }
-    })
-}
+//         }
+//     })
+// }
 
-function 
