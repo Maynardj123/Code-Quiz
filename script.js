@@ -116,3 +116,6 @@ function displayQuestion() {
 //     })
 // }
 
+// setTimeout(() => {
+//     document.querySelector('form button').removeAttribute('display-none');
+//   }, 8000);
