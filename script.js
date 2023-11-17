@@ -1,3 +1,5 @@
+
+//Brings the classes from hmtl and implements them into js
 var firstPage = document.querySelector(".firstPage")
 var titleWords = document.querySelector(".mainName");
 var titlepar = document.querySelector(".mainParagraph");
@@ -18,7 +20,7 @@ var timerElement = document.querySelector(".timerCount");
 var timer;
 var timerCounter;
 
-
+//The questions and answers for the quiz
 var questions =[
     {
         question:'Commonly used data types DO NOT include.',
@@ -53,6 +55,7 @@ startButton.addEventListener('click', startQuiz)
 
 
 function startQuiz() {
+    //The unhide function hides the Q/A from the screen so the next Q/A can be displayed(poorly named)
     function unhide() {
         question.style.removeProperty('display')
         choice1.style.removeProperty('display')
@@ -60,13 +63,13 @@ function startQuiz() {
         choice3.style.removeProperty('display')
         choice4.style.removeProperty('display')
     }
-    
+    //The Hide function hides the title screen to start the quiz
     function hide() {
         titleWords.style.display='none';
         titlepar.style.display='none';
         startButton.style.display='none';
     }
-
+    //Starts the two functions, followed by starting the quiz
     hide();
     unhide();
     // timerCounter= 75;
@@ -74,6 +77,7 @@ function startQuiz() {
     displayQuestion()
 }
 
+//checkAnswer will check the value of which question was clicked and score
 function checkAnswer() {
     var clickedContent = this.textContent
     if (clickedContent == questions[index].answer) {
@@ -84,6 +88,8 @@ function checkAnswer() {
     index ++ 
     displayQuestion()
 }
+
+//The displayQuestion will pull up the questions and answers. Starts the checkAnswer function
 function displayQuestion() {
     
     question.textContent = questions[index].question

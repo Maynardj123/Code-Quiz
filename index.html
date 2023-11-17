@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <!-- adds title and setsup website. Also connects the css -->
     <head>
         <title>Code Quiz</title>
         <meta charset="UTF-8"/>
@@ -7,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="./style.css"/>
     </head>
     <body>
+        <!-- implements the timer to the header -->
         <header>
            <div>
             <div class>View Highscore</div>
@@ -18,7 +20,9 @@
         </header>
 
         <main>
+            <!-- the container holds all the information on the page -->
             <div class="container">
+                <!-- the first page displays the title and start button -->
                 <section class="firstPage">
                     <div class="mainCard">
                         <div class="mainName">Coding Quiz Challenge</div>
@@ -27,6 +31,7 @@
                     <button class="startButton">Start Quiz</button>
                 </section>
 
+                <!-- otherPages hold the questions and starts it with them hidden until they start the quiz -->
                 <section class="otherPages">
                     <div class="questionCard">
                         <div style="display:none"  class="question">Question</div>
@@ -40,6 +45,7 @@
                 </section>
             </div>
         </main>
+        <!-- connects the js -->
         <script src="./script.js"></script>
     </body>
 </html>
